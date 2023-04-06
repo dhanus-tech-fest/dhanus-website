@@ -1,6 +1,6 @@
 <h1 align="center"> Dhanus Tech Fest Website</h1>
 
-This is the official website for the Dhanus Tech Fest, an annual event hosted by the College of Engineering Kalloppara.
+This is the official website for the Dhanus Tech Fest.
 
 ## Installation
 
