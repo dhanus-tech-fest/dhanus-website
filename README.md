@@ -7,7 +7,7 @@ This is the official website for the Dhanus Tech Fest, an annual event hosted by
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/dhanus-tech-fest.git
+git clone https://github.com/dhanus-tech-fest/dhanus-website
 ```
 
 
