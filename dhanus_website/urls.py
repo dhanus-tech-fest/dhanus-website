@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth.views import LoginView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('event_manager/', include('events.urls'))
+    path('login/', LoginView.as_view(template_name='admin/login.html', redirect_authenticated_user=True), name='login'),
+    path('event_manager/', include('events.urls')),
+    path('events_api/', include('events_api.urls'))
 ]
