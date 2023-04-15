@@ -23,8 +23,9 @@ def add_event(request):
         guidelines = request.POST["guidelines"]
         is_active = request.POST["is_active"]
         konf_hub_url = request.POST["konf_hub_url"]
+        contact = request.POST["contact"]
         Event.objects.create(image=image, title=title, description=description, prize=prize,
-                             konf_hub_url=konf_hub_url, is_active=is_active, guidelines=guidelines)
+                             konf_hub_url=konf_hub_url, is_active=is_active, guidelines=guidelines, contact=contact)
         return redirect('event_list')
     return render(request, 'events/add_event.html')
 
