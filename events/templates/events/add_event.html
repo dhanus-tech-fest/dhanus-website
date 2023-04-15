@@ -1,21 +1,38 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Add Event</h1>
-  <form method="POST" enctype="multipart/form-data">
-    {% csrf_token %}
-    <div class="form-group">
-      <label for="title">Title:</label>
-      <input type="text" class="form-control" id="title" name="title">
-    </div>
-    <div class="form-group">
-      <label for="description">Description:</label>
-      <textarea class="form-control" id="description" name="description"></textarea>
-    </div>
-    <div class="form-group">
-      <label for="image">Image:</label>
-      <input type="file" class="form-control" id="image" name="image">
-    </div>
-    <button type="submit" class="btn btn-primary">Add Event</button>
-  </form>
+<h1>Add Event</h1>
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="form-group">
+    <label for="title">Title:</label>
+    <input type="text" class="file-input file-input-bordered w-full max-w-xs" id="title" name="title">
+  </div>
+  <div class="form-group">
+    <label for="is_active">Is Active:</label>
+    <input type="text" class="file-input file-input-bordered w-full max-w-xs" id="is_active" name="is_active">
+  </div>
+  <div class="form-group">
+    <label for="konf_hub_url">Konfhub URL:</label>
+    <input type="text" class="file-input file-input-bordered w-full max-w-xs" id="konf_hub_url" name="konf_hub_url">
+  </div>
+  <div class="form-group">
+    <label for="prize">Prize:</label>
+    <input type="text" class="file-input file-input-bordered w-full max-w-xs" id="prize" name="prize">
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <textarea class="file-input file-input-bordered w-full max-w-xs" id="description" name="description"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="guidelines">Guidelines:</label>
+    <textarea class="file-input file-input-bordered w-full max-w-xs" id="guidelines" name="guidelines"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="image">Image:</label>
+    <input type="file" class="file-input file-input-bordered w-full max-w-xs" id="image" name="image">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Add Event</button>
+</form>
 {% endblock %}
